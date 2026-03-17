@@ -4,14 +4,14 @@ interface CompactSuggestionsProps {
 }
 
 const quickIdeas = [
-  { emoji: '🌌', text: 'Cosmic nebula explosion vibrant colors deep space photorealistic' },
-  { emoji: '🐉', text: 'Ancient dragon soaring above mystical glowing mountain castle' },
-  { emoji: '👸', text: 'Ethereal goddess with silver hair enchanted forest golden light' },
-  { emoji: '🤖', text: 'Futuristic cyberpunk robot neon city rain night cinematic' },
-  { emoji: '🌊', text: 'Massive ocean wave crashing dramatic stormy sky epic' },
-  { emoji: '🦁', text: 'Majestic lion portrait golden savanna sunset dramatic lighting' },
-  { emoji: '🏔️', text: 'Snow capped mountain reflection crystal lake misty morning' },
-  { emoji: '🔮', text: 'Mystical wizard casting spell ancient ruins swirling energy' },
+  { emoji: '🏢', text: 'Minimalist tech startup, letter A, geometric triangle, navy blue silver, sans-serif, white background' },
+  { emoji: '🍽️', text: 'Luxury restaurant logo, golden fork icon, elegant script font, black background' },
+  { emoji: '🎮', text: 'Gaming company logo, fierce dragon head, red black, bold aggressive font, dark background' },
+  { emoji: '⚖️', text: 'Law firm logo, scales of justice, navy blue gold, professional serif font, white background' },
+  { emoji: '🌿', text: 'Eco brand logo, green leaf in circle, earthy tones, modern minimalist, white background' },
+  { emoji: '💎', text: 'Luxury jewelry brand, diamond crown icon, gold and white, elegant serif font, black background' },
+  { emoji: '💪', text: 'Fitness brand logo, lightning bolt shield, orange black, strong condensed font, dark background' },
+  { emoji: '🔮', text: 'Crypto project logo, hexagon pattern, purple neon glow, futuristic font, dark background' },
 ];
 
 export default function CompactSuggestions({ onIdeaSelect }: CompactSuggestionsProps) {
