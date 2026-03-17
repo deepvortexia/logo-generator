@@ -149,10 +149,10 @@ export default function Header({ buyPack, onBuyPackHandled }: HeaderProps) {
         </div>
 
         {/* Brand Title */}
-        <h1 className="brand-title-text">AI Image Generator</h1>
-        
+        <h1 className="brand-title-text">AI Logo Generator</h1>
+
         {/* Tagline */}
-        <p className="primary-tagline">✨ Turn words into images instantly</p>
+        <p className="primary-tagline">✨ Turn words into logos instantly</p>
 
         {/* Pill Buttons Container */}
         <div className="hub-pills-container">

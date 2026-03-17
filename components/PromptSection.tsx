@@ -25,7 +25,7 @@ export default function PromptSection({
     <div className="prompt-section-wrapper">
       <h3 className="prompt-section-title">
         <span className="title-icon">✨</span>
-        Create Your Image
+        Create Your Logo
       </h3>
       
       <div className="prompt-input-container">
@@ -34,7 +34,7 @@ export default function PromptSection({
           className="prompt-input-enhanced"
           value={prompt}
           onChange={(e) => onPromptChange(e.target.value)}
-          placeholder="Describe your image in detail (e.g., futuristic city at sunset with neon lights and flying cars) • Press Ctrl+Enter to generate"
+          placeholder="Describe your logo (e.g., minimalist tech logo, blue gradient, modern font) • Press Ctrl+Enter to generate"
           onKeyDown={(e) => e.key === 'Enter' && e.ctrlKey && !isLoading && onGenerate()}
           disabled={isLoading}
           rows={5}

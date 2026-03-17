@@ -158,13 +158,12 @@ export async function POST(req: NextRequest) {
       console.log('🚀 Calling Replicate with Flux-1.1-Pro...');
 
       const output = await replicate.run(
-        "black-forest-labs/flux-1.1-pro",
+        "ideogram-ai/ideogram-v2",
         {
           input: {
             prompt: prompt.trim(),
-            aspect_ratio: selectedRatio,
-            output_format: 'jpg',
-            output_quality: 80,
+            aspect_ratio: "1:1",
+            style_type: "Design",
           }
         }
       );

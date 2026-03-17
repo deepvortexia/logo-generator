@@ -3,9 +3,9 @@ import "./globals.css";
 import { AuthProvider } from "@/context/AuthContext";
 
 export const metadata: Metadata = {
-  title: "AI Image Generator - Deep Vortex AI | Create Stunning Images from Text",
-  description: "Create stunning AI-generated images from text descriptions. Professional quality, multiple aspect ratios, instant results. Part of the Deep Vortex AI creative ecosystem.",
-  keywords: "AI image generator, text to image, AI art, image creation, Deep Vortex AI, Imagen, AI tools, generate images from text, AI art generator",
+  title: "AI Logo Generator - Deep Vortex AI | Create Professional Logos from Text",
+  description: "Create stunning AI-generated logos from text descriptions. Professional quality, unique designs, instant results. Part of the Deep Vortex AI creative ecosystem.",
+  keywords: "AI logo generator, text to logo, AI logo design, logo creation, Deep Vortex AI, Ideogram, AI tools, generate logos from text, AI logo maker",
   authors: [{ name: "Deep Vortex AI" }],
   creator: "Deep Vortex AI",
   publisher: "Deep Vortex AI",
@@ -13,40 +13,40 @@ export const metadata: Metadata = {
   verification: {
     google: "76BAsq1e-Ol7tA8HmVLi9LgMDXpjyBIQvdAx6bZXF7Q",
   },
-  metadataBase: new URL("https://images.deepvortexai.art"),
+  metadataBase: new URL("https://logo.deepvortexai.art"),
   alternates: {
-    canonical: "https://images.deepvortexai.art",
+    canonical: "https://logo.deepvortexai.art",
   },
   openGraph: {
     type: "website",
-    url: "https://images.deepvortexai.art",
-    title: "AI Image Generator - Deep Vortex AI",
-    description: "Create stunning AI-generated images from text. Professional quality, multiple aspect ratios, instant results.",
+    url: "https://logo.deepvortexai.art",
+    title: "AI Logo Generator - Deep Vortex AI",
+    description: "Create stunning AI-generated logos from text. Professional quality, unique designs, instant results.",
     siteName: "Deep Vortex AI",
     locale: "en_US",
-    images: [{ url: "https://images.deepvortexai.art/deepgoldremoveetiny.png", width: 512, height: 512, alt: "Deep Vortex AI Image Generator" }],
+    images: [{ url: "https://logo.deepvortexai.art/deepgoldremoveetiny.png", width: 512, height: 512, alt: "Deep Vortex AI Logo Generator" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@deepvortexart",
     creator: "@deepvortexart",
-    title: "AI Image Generator - Deep Vortex AI",
-    description: "Create stunning AI-generated images from text. Professional quality, instant results.",
-    images: ["https://images.deepvortexai.art/deepgoldremoveetiny.png"],
+    title: "AI Logo Generator - Deep Vortex AI",
+    description: "Create stunning AI-generated logos from text. Professional quality, instant results.",
+    images: ["https://logo.deepvortexai.art/deepgoldremoveetiny.png"],
   },
   icons: {
     icon: [
-      { url: "https://images.deepvortexai.art/favicon.ico?v=4", sizes: "any" },
-      { url: "https://images.deepvortexai.art/favicon.svg?v=4", type: "image/svg+xml" },
+      { url: "https://logo.deepvortexai.art/favicon.ico?v=4", sizes: "any" },
+      { url: "https://logo.deepvortexai.art/favicon.svg?v=4", type: "image/svg+xml" },
     ],
-    apple: "https://images.deepvortexai.art/apple-touch-icon.png?v=4",
+    apple: "https://logo.deepvortexai.art/apple-touch-icon.png?v=4",
   },
   other: {
     "theme-color": "#D4AF37",
     "apple-mobile-web-app-capable": "yes",
     "apple-mobile-web-app-title": "Deep Vortex AI",
     "apple-mobile-web-app-status-bar-style": "black-translucent",
-    "application-name": "Deep Vortex AI Image Generator",
+    "application-name": "Deep Vortex AI Logo Generator",
     "ai-content-declaration": "AI-powered creative tools",
     "perplexity-verification": "deepvortexai",
   },
@@ -58,9 +58,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="https://images.deepvortexai.art/favicon.ico?v=4" sizes="any" />
-        <link rel="icon" type="image/svg+xml" href="https://images.deepvortexai.art/favicon.svg?v=4" />
-        <link rel="apple-touch-icon" href="https://images.deepvortexai.art/apple-touch-icon.png?v=4" />
+        <link rel="icon" href="https://logo.deepvortexai.art/favicon.ico?v=4" sizes="any" />
+        <link rel="icon" type="image/svg+xml" href="https://logo.deepvortexai.art/favicon.svg?v=4" />
+        <link rel="apple-touch-icon" href="https://logo.deepvortexai.art/apple-touch-icon.png?v=4" />
         <link rel="llms" href="/llms.txt" type="text/plain" />
         <meta name="revisit-after" content="3 days" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -73,9 +73,9 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebApplication",
-              "name": "Deep Vortex AI Image Generator",
-              "description": "Create stunning AI-generated images from text descriptions with professional quality.",
-              "url": "https://images.deepvortexai.art",
+              "name": "Deep Vortex AI Logo Generator",
+              "description": "Create stunning AI-generated logos from text descriptions with professional quality.",
+              "url": "https://logo.deepvortexai.art",
               "applicationCategory": "DesignApplication",
               "operatingSystem": "All",
               "offers": {
@@ -96,9 +96,9 @@ export default function RootLayout({
                 ]
               },
               "featureList": [
-                "Text to Image Generation",
+                "Text to Logo Generation",
                 "Multiple Aspect Ratios",
-                "AI-Powered with Flux",
+                "AI-Powered with Ideogram V2",
                 "Instant Download",
                 "Favorites Gallery"
               ]
