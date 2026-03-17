@@ -7,6 +7,7 @@ import CompactSuggestions from'../components/CompactSuggestions';
 import PromptSection from'../components/PromptSection';
 import ImageDisplay from'../components/ImageDisplay';
 import{Notification}from'../components/Notification';
+import HowToUseModal from'../components/HowToUseModal';
 import{useAuth}from'@/context/AuthContext';
 import{createClient}from'@/lib/supabase/client';
 function HomeContent(){
@@ -81,6 +82,7 @@ function HomeContent(){
   };
   return(
     <div className="min-h-screen bg-black text-white font-sans pb-10">
+      <HowToUseModal />
       <Header buyPack={buyPack} onBuyPackHandled={()=>setBuyPack(null)}/>
       <div className="particles">
         {[10, 20, 30, 40, 50, 60, 70, 80, 90].map((left, i) => (
