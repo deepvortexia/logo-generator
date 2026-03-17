@@ -83,6 +83,57 @@ export default function HowToUsePage() {
           </p>
         </section>
 
+        {/* Ready-to-Use Prompts */}
+        <section style={{ marginBottom: "3.5rem" }}>
+          <h2 style={{ fontFamily: "'Orbitron', sans-serif", fontSize: "1.1rem", fontWeight: 700, color: "#E8C87C", textAlign: "center", marginBottom: "1.6rem", letterSpacing: "1px" }}>
+            8 Ready-to-Use Prompts
+          </h2>
+          <div style={{ display: "flex", flexDirection: "column", gap: "0.75rem" }}>
+            {[
+              "Minimalist tech startup, letter D, diamond shape, deep blue silver, sans-serif, white background",
+              "Luxury restaurant, golden fork icon, elegant script font, black background, gold effect",
+              "Gaming company, fierce dragon, red black, bold aggressive font, dark background",
+              "Law firm, scales of justice, navy blue gold, serif font, white background",
+              "Eco brand, green leaf in circle, earthy tones, modern minimalist, white background",
+              "Crypto project, hexagon pattern, purple neon, futuristic font, dark background",
+              "Vintage barbershop, classic razor, red white blue, retro bold lettering",
+              "Fitness brand, lightning bolt shield, orange black, strong condensed font",
+            ].map((prompt, i) => (
+              <button
+                key={i}
+                onClick={() => navigator.clipboard.writeText(prompt)}
+                style={{ display: "flex", alignItems: "center", gap: "1rem", background: "rgba(20,18,10,0.85)", border: "1px solid rgba(212,175,55,0.2)", borderRadius: "12px", padding: "0.9rem 1.2rem", cursor: "pointer", textAlign: "left", transition: "border-color 0.2s, box-shadow 0.2s", width: "100%" }}
+                onMouseEnter={e => { (e.currentTarget as HTMLButtonElement).style.borderColor = "rgba(212,175,55,0.6)"; (e.currentTarget as HTMLButtonElement).style.boxShadow = "0 0 16px rgba(212,175,55,0.1)"; }}
+                onMouseLeave={e => { (e.currentTarget as HTMLButtonElement).style.borderColor = "rgba(212,175,55,0.2)"; (e.currentTarget as HTMLButtonElement).style.boxShadow = "none"; }}
+              >
+                <span style={{ flexShrink: 0, fontFamily: "'Orbitron', sans-serif", fontSize: "0.7rem", fontWeight: 700, color: "#D4AF37", minWidth: "20px" }}>{i + 1}.</span>
+                <span style={{ color: "rgba(255,255,255,0.75)", fontSize: "0.88rem", lineHeight: 1.5, flex: 1 }}>{prompt}</span>
+                <span style={{ flexShrink: 0, fontSize: "0.75rem", color: "rgba(212,175,55,0.6)", letterSpacing: "0.5px" }}>copy</span>
+              </button>
+            ))}
+          </div>
+        </section>
+
+        {/* What to Avoid */}
+        <section style={{ marginBottom: "3.5rem", background: "rgba(180,30,30,0.06)", border: "1px solid rgba(200,60,60,0.25)", borderRadius: "16px", padding: "1.6rem 1.8rem" }}>
+          <p style={{ fontFamily: "'Orbitron', sans-serif", fontSize: "0.8rem", fontWeight: 700, color: "#e07070", letterSpacing: "1.5px", marginBottom: "1rem" }}>⚠️ WHAT TO AVOID</p>
+          <div style={{ display: "flex", flexDirection: "column", gap: "0.65rem" }}>
+            {[
+              ["Too vague", "just say \"logo\" with no details"],
+              ["Too many elements", "max 1–2 symbols per prompt"],
+              ["No background color specified", "always mention white, black, or dark"],
+              ["No font style mentioned", "add serif, sans-serif, script, or bold condensed"],
+            ].map(([label, detail]) => (
+              <div key={label} style={{ display: "flex", gap: "0.75rem", alignItems: "flex-start" }}>
+                <span style={{ color: "#e07070", fontSize: "0.9rem", flexShrink: 0, marginTop: "1px" }}>✗</span>
+                <p style={{ color: "rgba(255,255,255,0.65)", fontSize: "0.9rem", lineHeight: 1.5, margin: 0 }}>
+                  <strong style={{ color: "#e07070" }}>{label}</strong> — {detail}
+                </p>
+              </div>
+            ))}
+          </div>
+        </section>
+
         {/* Other Tools */}
         <section>
           <h2 style={{ fontFamily: "'Orbitron', sans-serif", fontSize: "1.1rem", fontWeight: 700, color: "#E8C87C", textAlign: "center", marginBottom: "1.6rem", letterSpacing: "1px" }}>
