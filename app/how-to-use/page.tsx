@@ -19,7 +19,7 @@ const otherTools = [
 
 export default function HowToUsePage() {
   useEffect(() => {
-    document.title = "How to Use the AI Image Generator - Deep Vortex AI";
+    document.title = "How to Use the AI Logo Generator - Deep Vortex AI";
   }, []);
 
   return (
@@ -27,16 +27,16 @@ export default function HowToUsePage() {
 
       {/* Header */}
       <header style={{ textAlign: "center", padding: "2.5rem 1rem 1rem", borderBottom: "1px solid rgba(212,175,55,0.15)" }}>
-        <Link href="https://images.deepvortexai.art" style={{ display: "inline-block", color: "rgba(212,175,55,0.8)", textDecoration: "none", fontSize: "0.85rem", marginBottom: "1.2rem", letterSpacing: "0.5px" }}>
-          ← Back to Image Generator
+        <Link href="https://logo.deepvortexai.art" style={{ display: "inline-block", color: "rgba(212,175,55,0.8)", textDecoration: "none", fontSize: "0.85rem", marginBottom: "1.2rem", letterSpacing: "0.5px" }}>
+          ← Back to Logo Generator
         </Link>
         <div style={{ display: "flex", justifyContent: "center", marginBottom: "1rem" }}>
           <Image src="/logotinyreal.webp" alt="Deep Vortex AI" width={180} height={58} priority style={{ objectFit: "contain" }} />
         </div>
         <h1 style={{ fontFamily: "'Orbitron', sans-serif", fontSize: "clamp(1.4rem, 4vw, 2.2rem)", fontWeight: 900, letterSpacing: "1px", background: "linear-gradient(135deg, #E8C87C 0%, #D4AF37 60%, #B8860B 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text", marginBottom: "0.6rem" }}>
-          How to Use the AI Image Generator
+          How to Use the AI Logo Generator
         </h1>
-        <p style={{ color: "rgba(255,255,255,0.55)", fontSize: "1rem" }}>Create stunning images from text in seconds</p>
+        <p style={{ color: "rgba(255,255,255,0.55)", fontSize: "1rem" }}>Create professional logos from text in seconds</p>
       </header>
 
       <main style={{ maxWidth: "800px", margin: "0 auto", padding: "3rem 1.2rem 5rem" }}>
@@ -46,18 +46,18 @@ export default function HowToUsePage() {
           {[
             {
               num: 1,
-              title: "Describe Your Vision",
-              body: "Type a detailed text prompt describing the image you want to create. The more specific you are — colors, mood, style, lighting, subject — the better your results. Think of it as giving instructions to a professional artist.",
+              title: "Write Your Logo Prompt",
+              body: "Describe your logo with 4 key elements: 1) Company name or initial, 2) Style (minimalist, vintage, luxury, modern, aggressive, playful), 3) Colors (be specific: navy blue, gold, neon green), 4) Symbol or icon (shield, lightning bolt, leaf, dragon, crown). The more specific, the better the result.",
             },
             {
               num: 2,
-              title: "Choose Your Style",
-              body: "Select the aspect ratio that fits your needs: square (1:1) for social media, portrait (9:16) for mobile wallpapers, or landscape (16:9) for desktop and cinematic shots. Use the style chips for instant inspiration.",
+              title: "Choose Square Format 1:1",
+              body: "Always use 1:1 (square) for logos — it works on business cards, websites, social media, and apps. Ideogram V2 excels at clean designs with readable text and crisp edges.",
             },
             {
               num: 3,
-              title: "Generate & Download",
-              body: "Click the Generate button and your image will be ready in seconds. Download it instantly in full quality, save it to your Favorites for later, or regenerate for a fresh variation.",
+              title: "Generate & Refine",
+              body: "Generate your logo and download it in full quality. If the result isn't perfect, tweak your prompt — add more details about style or colors and regenerate. Save your favorites to your gallery.",
             },
           ].map(({ num, title, body }) => (
             <div key={num} style={{ display: "flex", gap: "1.4rem", alignItems: "flex-start", marginBottom: "2rem", background: "rgba(20,18,10,0.85)", border: "1px solid rgba(212,175,55,0.25)", borderRadius: "16px", padding: "1.6rem", backdropFilter: "blur(12px)" }}>
@@ -74,12 +74,12 @@ export default function HowToUsePage() {
 
         {/* Pro Tip */}
         <section style={{ marginBottom: "3.5rem", background: "rgba(212,175,55,0.07)", border: "1px solid rgba(212,175,55,0.4)", borderRadius: "16px", padding: "1.6rem 1.8rem" }}>
-          <p style={{ fontFamily: "'Orbitron', sans-serif", fontSize: "0.8rem", fontWeight: 700, color: "#D4AF37", letterSpacing: "1.5px", marginBottom: "0.6rem" }}>⚡ PRO TIP</p>
-          <p style={{ color: "rgba(255,255,255,0.75)", lineHeight: 1.65, fontSize: "0.93rem" }}>
-            For best results, describe <strong style={{ color: "#E8C87C" }}>lighting, mood, and style</strong> in your prompt.
+          <p style={{ fontFamily: "'Orbitron', sans-serif", fontSize: "0.8rem", fontWeight: 700, color: "#D4AF37", letterSpacing: "1.5px", marginBottom: "0.6rem" }}>⚡ PRO TIP — The Logo Prompt Formula</p>
+          <p style={{ color: "rgba(255,255,255,0.75)", lineHeight: 1.65, fontSize: "0.93rem", marginBottom: "0.8rem" }}>
+            <strong style={{ color: "#E8C87C" }}>[Style]</strong> + <strong style={{ color: "#E8C87C" }}>[Name/Letter]</strong> + <strong style={{ color: "#E8C87C" }}>[Symbol]</strong> + <strong style={{ color: "#E8C87C" }}>[Colors]</strong> + <strong style={{ color: "#E8C87C" }}>[Font]</strong> + <strong style={{ color: "#E8C87C" }}>[Background]</strong>
           </p>
-          <p style={{ marginTop: "0.7rem", color: "rgba(255,255,255,0.45)", fontSize: "0.85rem", fontStyle: "italic" }}>
-            Example: &ldquo;A cyberpunk city at night, neon lights, rain, cinematic&rdquo;
+          <p style={{ color: "rgba(255,255,255,0.45)", fontSize: "0.85rem", fontStyle: "italic" }}>
+            Example: &ldquo;Minimalist tech logo, letter D, diamond shape, blue silver, sans-serif, white background&rdquo;
           </p>
         </section>
 
@@ -104,8 +104,8 @@ export default function HowToUsePage() {
 
         {/* CTA */}
         <div style={{ textAlign: "center", marginTop: "3rem" }}>
-          <Link href="https://images.deepvortexai.art" style={{ display: "inline-block", padding: "0.7rem 2rem", background: "linear-gradient(135deg, #B8860B, #D4AF37)", color: "#0a0a0a", borderRadius: "50px", fontWeight: 700, fontSize: "0.95rem", textDecoration: "none", letterSpacing: "0.5px" }}>
-            Start Generating →
+          <Link href="https://logo.deepvortexai.art" style={{ display: "inline-block", padding: "0.7rem 2rem", background: "linear-gradient(135deg, #B8860B, #D4AF37)", color: "#0a0a0a", borderRadius: "50px", fontWeight: 700, fontSize: "0.95rem", textDecoration: "none", letterSpacing: "0.5px" }}>
+            Start Creating Logos →
           </Link>
         </div>
 
