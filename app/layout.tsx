@@ -77,6 +77,7 @@ export default function RootLayout({
               "name": "Deep Vortex AI Logo Generator",
               "description": "Create stunning AI-generated logos from text descriptions with professional quality.",
               "url": "https://logo.deepvortexai.com",
+              "image": "https://logo.deepvortexai.com/deepgoldremoveetiny.png",
               "applicationCategory": "DesignApplication",
               "operatingSystem": "All",
               "offers": {
