@@ -8,9 +8,9 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "AI Logo Generator - Deep Vortex AI | Create Professional Logos from Text",
-  description: "Create stunning AI-generated logos from text descriptions. Professional quality, unique designs, instant results. Part of the Deep Vortex AI creative ecosystem.",
-  keywords: "AI logo generator, text to logo, AI logo design, logo creation, Deep Vortex AI, Ideogram, AI tools, generate logos from text, AI logo maker",
+  title: "AI Logo Generator Free Online — Create Professional Logos No Signup | Deep Vortex AI",
+  description: "Create stunning professional logos from text descriptions with AI — unique designs, instant results. Free online logo maker, no signup required. Part of Deep Vortex AI.",
+  keywords: "AI logo generator free online, text to logo AI free, free AI logo maker no signup, professional logo creator AI, generate logo from text free, AI logo design tool free, Deep Vortex AI logo generator, create business logo AI free",
   authors: [{ name: "Deep Vortex AI" }],
   creator: "Deep Vortex AI",
   publisher: "Deep Vortex AI",
@@ -25,8 +25,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://logo.deepvortexai.com",
-    title: "AI Logo Generator - Deep Vortex AI",
-    description: "Create stunning AI-generated logos from text. Professional quality, unique designs, instant results.",
+    title: "AI Logo Generator Free Online — Create Professional Logos No Signup | Deep Vortex AI",
+    description: "Create stunning professional logos from text descriptions with AI — unique designs, instant results. Free online logo maker, no signup required. Part of Deep Vortex AI.",
     siteName: "Deep Vortex AI",
     locale: "en_US",
     images: [{ url: "https://logo.deepvortexai.com/deepgoldremoveetiny.png", width: 512, height: 512, alt: "Deep Vortex AI Logo Generator" }],
@@ -35,8 +35,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@deepvortexart",
     creator: "@deepvortexart",
-    title: "AI Logo Generator - Deep Vortex AI",
-    description: "Create stunning AI-generated logos from text. Professional quality, instant results.",
+    title: "AI Logo Generator Free Online — Create Professional Logos No Signup | Deep Vortex AI",
+    description: "Create stunning professional logos from text descriptions with AI — unique designs, instant results. Free online logo maker, no signup required. Part of Deep Vortex AI.",
     images: ["https://logo.deepvortexai.com/deepgoldremoveetiny.png"],
   },
   icons: {
