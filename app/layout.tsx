@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     description: "Create stunning professional logos from text descriptions with AI — unique designs, instant results. Free online logo maker, no signup required. Part of Deep Vortex AI.",
     siteName: "Deep Vortex AI",
     locale: "en_US",
-    images: [{ url: "https://logo.deepvortexai.com/deepgoldremoveetiny.png", width: 512, height: 512, alt: "Deep Vortex AI Logo Generator" }],
+    images: [{ url: "/og-image.webp", width: 512, height: 512, alt: "Deep Vortex AI Logo Generator" }],
   },
   twitter: {
     card: "summary_large_image",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     creator: "@deepvortexart",
     title: "AI Logo Generator Free Online — Create Professional Logos No Signup | Deep Vortex AI",
     description: "Create stunning professional logos from text descriptions with AI — unique designs, instant results. Free online logo maker, no signup required. Part of Deep Vortex AI.",
-    images: ["https://logo.deepvortexai.com/deepgoldremoveetiny.png"],
+    images: ["/og-image.webp"],
   },
   icons: {
     icon: [
@@ -82,7 +82,7 @@ export default function RootLayout({
               "name": "Deep Vortex AI Logo Generator",
               "description": "Create stunning AI-generated logos from text descriptions with professional quality.",
               "url": "https://logo.deepvortexai.com",
-              "image": "https://logo.deepvortexai.com/deepgoldremoveetiny.png",
+              "image": "/og-image.webp",
               "applicationCategory": "DesignApplication",
               "operatingSystem": "All",
               "offers": {
